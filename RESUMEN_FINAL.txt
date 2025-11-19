@@ -333,7 +333,7 @@ Funciones: Ver helpers.js en blog/utilidades
 ║                      ¡PROYECTO LISTA PARA USAR!                           ║
 ║                                                                            ║
 ║  Hecho con 💙 usando SIUM Framework                                       ║
-║  Autor: Juan Pérez                                                        ║
+║  Autor: AlexisGuerrero                                                      ║
 ║  Licencia: MIT                                                            ║
 ║  Fecha: 19 de Noviembre, 2025                                             ║
 ╚════════════════════════════════════════════════════════════════════════════╝
