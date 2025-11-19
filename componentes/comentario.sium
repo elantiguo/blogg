@@ -1,0 +1,11 @@
+[componente comentario]
+<div estilo="background-color: #f8f9fa; border-left: 4px solid #3498db; padding: 15px; margin-bottom: 15px; border-radius: 4px;">
+  <div estilo="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <parrafo estilo="font-weight: bold; margin: 0; color: #2c3e50;">Nombre del Comentarista</parrafo>
+    <parrafo estilo="color: #95a5a6; font-size: 12px; margin: 0;">Hace 2 horas</parrafo>
+  </div>
+  <parrafo estilo="color: #34495e; margin: 0; line-height: 1.5;">
+    Este es un comentario de ejemplo. El contenido del comentario se mostrará aquí con un formato limpio y ordenado.
+  </parrafo>
+</div>
+[/componente]

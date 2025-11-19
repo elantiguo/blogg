@@ -1,0 +1,241 @@
+/* Estilos para la página de Artículos */
+
+/* Navegación */
+nav {
+  color-fondo: #2c3e50;
+  espaciado: 15px 0;
+  espaciado-inferior: 30px;
+  sombra: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav > div {
+  ancho-máximo: 1200px;
+  margen: 0 auto;
+  espaciado: 0 20px;
+  exhibición: flex;
+  justificar-contenido: espacio-entre;
+  alinear-elementos: centro;
+}
+
+nav a {
+  color: #ecf0f1;
+  sin-decoración: ninguna;
+  grosor-fuente: negrita;
+}
+
+nav h1 {
+  color: #ecf0f1;
+  margen: 0;
+  tamaño-fuente: 24px;
+}
+
+/* Contenedor principal */
+.contenedor-articulos {
+  ancho-máximo: 1200px;
+  margen: 0 auto;
+  espaciado: 0 20px;
+}
+
+.contenedor-articulos h1 {
+  color: #2c3e50;
+  espaciado-inferior: 30px;
+}
+
+/* Cuadrícula principal */
+.malla-articulos {
+  exhibición: cuadrícula;
+  columnas-cuadrícula: 1fr 300px;
+  espacio: 30px;
+}
+
+/* Artículos */
+articulo {
+  color-fondo: #fff;
+  radio-esquina: 8px;
+  espaciado: 25px;
+  espaciado-inferior: 25px;
+  sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: puntero;
+  transición: transformar 0.3s, sombra 0.3s;
+}
+
+articulo:al-pasar {
+  transformar: trasladarY(-5px);
+  sombra: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.encabezado-articulo {
+  exhibición: flex;
+  justificar-contenido: espacio-entre;
+  alinear-elementos: inicio-flex;
+  espaciado-inferior: 15px;
+}
+
+.titulo-articulo {
+  margen: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.fecha-articulo {
+  color: #7f8c8d;
+  tamaño-fuente: 14px;
+  margen: 0;
+}
+
+.etiqueta-categoria {
+  color-fondo: #667eea;
+  color: blanco;
+  espaciado: 5px 15px;
+  radio-esquina: 20px;
+  tamaño-fuente: 12px;
+  espacio-blanco: sin-ajuste;
+}
+
+.etiqueta-categoria.javascript {
+  color-fondo: #f39c12;
+}
+
+.etiqueta-categoria.css {
+  color-fondo: #e74c3c;
+}
+
+.etiqueta-categoria.nodejs {
+  color-fondo: #27ae60;
+}
+
+.contenido-articulo {
+  color: #34495e;
+  altura-línea: 1.6;
+  margen: 15px 0;
+}
+
+.metadatos-articulo {
+  color: #95a5a6;
+  tamaño-fuente: 14px;
+}
+
+/* Barra lateral */
+barra-lateral {
+  color-fondo: #f8f9fa;
+  espaciado: 20px;
+  radio-esquina: 8px;
+  altura: contenido-ajustado;
+  posición: pegajoso;
+  superior: 20px;
+}
+
+barra-lateral h3 {
+  margen-superior: 0;
+}
+
+barra-lateral ul {
+  estilo-lista: ninguno;
+  espaciado: 0;
+  margen: 0;
+}
+
+barra-lateral li {
+  espaciado-inferior: 10px;
+}
+
+.enlace-categoria,
+.enlace-popular {
+  color: #667eea;
+  sin-decoración: ninguna;
+  exhibición: bloque;
+  espaciado: 8px;
+  radio-esquina: 4px;
+  transición: color-fondo 0.3s;
+}
+
+.enlace-categoria:al-pasar,
+.enlace-popular:al-pasar {
+  color-fondo: #e8e8ff;
+}
+
+.elemento-popular {
+  espaciado-inferior: 12px;
+  espaciado-inferior: 12px;
+  borde-inferior: 1px sólido #ddd;
+}
+
+.titulo-popular {
+  color: #2c3e50;
+  sin-decoración: ninguna;
+  grosor-fuente: negrita;
+  exhibición: bloque;
+  tamaño-fuente: 14px;
+}
+
+.vistas-popular {
+  margen: 5px 0 0 0;
+  color: #95a5a6;
+  tamaño-fuente: 12px;
+}
+
+/* Boletín */
+.boletin {
+  fondo: gradiente-lineal(135grados, #667eea 0%, #764ba2 100%);
+  espaciado: 20px;
+  radio-esquina: 8px;
+  color: blanco;
+  espaciado-superior: 20px;
+}
+
+.boletin h4 {
+  margen-superior: 0;
+  espaciado-inferior: 15px;
+}
+
+.boletin entrada {
+  ancho: 100%;
+  espaciado: 12px;
+  borde: ninguno;
+  radio-esquina: 4px;
+  espaciado-inferior: 10px;
+  tamaño-fuente: 14px;
+  cambio-tamaño-caja: borde-incluido;
+}
+
+.boletin entrada::marcador {
+  color: #ccc;
+}
+
+.boletin botón {
+  ancho: 100%;
+  espaciado: 12px;
+  color-fondo: #fff;
+  color: #667eea;
+  borde: ninguno;
+  radio-esquina: 4px;
+  grosor-fuente: negrita;
+  cursor: puntero;
+  transición: color-fondo 0.3s;
+}
+
+.boletin botón:al-pasar {
+  color-fondo: #f0f0f0;
+}
+
+/* Pie de página */
+pie-pagina {
+  color-fondo: #2c3e50;
+  color: #ecf0f1;
+  alineación-texto: centro;
+  espaciado: 20px;
+  espaciado-superior: 50px;
+  borde-superior: 3px sólido #667eea;
+}
+
+pie-pagina p {
+  margen: 5px 0;
+}
+
+pie-pagina a {
+  color: #667eea;
+  sin-decoración: ninguna;
+}
+
+pie-pagina a:al-pasar {
+  sin-decoración: subrayar;
+}

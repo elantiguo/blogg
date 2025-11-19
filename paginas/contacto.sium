@@ -1,0 +1,92 @@
+<navegacion></navegacion>
+
+<contenedor estilo="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+  <div estilo="text-align: center; margin-bottom: 40px;">
+    <t1 estilo="color: #2c3e50; margin-bottom: 10px;">Ponte en Contacto</t1>
+    <parrafo estilo="color: #7f8c8d; font-size: 16px;">¿Tienes una pregunta o propuesta? Me encantaría escucharte. Completa el formulario y te responderé lo antes posible.</parrafo>
+  </div>
+
+  <div estilo="background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 40px;">
+    <form>
+      <div estilo="margin-bottom: 20px;">
+        <etiqueta para="nombre" estilo="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">Nombre</etiqueta>
+        <entrada tipo="texto" id="nombre" marcador="Tu nombre completo" estilo="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+      </div>
+
+      <div estilo="margin-bottom: 20px;">
+        <etiqueta para="email" estilo="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">Correo Electrónico</etiqueta>
+        <entrada tipo="email" id="email" marcador="tu@email.com" estilo="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+      </div>
+
+      <div estilo="margin-bottom: 20px;">
+        <etiqueta para="asunto" estilo="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">Asunto</etiqueta>
+        <entrada tipo="texto" id="asunto" marcador="¿Sobre qué quieres hablar?" estilo="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+      </div>
+
+      <div estilo="margin-bottom: 20px;">
+        <etiqueta para="mensaje" estilo="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">Mensaje</etiqueta>
+        <textarea id="mensaje" marcador="Tu mensaje aquí..." estilo="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; height: 150px; font-family: Arial, sans-serif;"></textarea>
+      </div>
+
+      <boton cuando_clic="enviarMensaje()" estilo="width: 100%; background-color: #667eea; color: white; border: none; padding: 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 16px; transition: background-color 0.3s;">
+        📤 Enviar Mensaje
+      </boton>
+    </form>
+
+    <div id="mensaje-respuesta" estilo="margin-top: 20px; text-align: center;"></div>
+  </div>
+
+  <div estilo="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px;">
+    <div estilo="background-color: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+      <parrafo estilo="font-size: 32px; margin: 0 0 10px 0;">📧</parrafo>
+      <t3 estilo="margin: 10px 0; color: #2c3e50;">Email</t3>
+      <parrafo estilo="color: #667eea; text-decoration: none; margin: 0;">
+        <enlace href="mailto:hola@juanperez.com" texto="hola@juanperez.com" estilo="color: #667eea; text-decoration: none;">
+      </parrafo>
+    </div>
+
+    <div estilo="background-color: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+      <parrafo estilo="font-size: 32px; margin: 0 0 10px 0;">📱</parrafo>
+      <t3 estilo="margin: 10px 0; color: #2c3e50;">Teléfono</t3>
+      <parrafo estilo="color: #667eea; text-decoration: none; margin: 0;">
+        <enlace href="tel:+525512345678" texto="+52 55 1234 5678" estilo="color: #667eea; text-decoration: none;">
+      </parrafo>
+    </div>
+
+    <div estilo="background-color: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+      <parrafo estilo="font-size: 32px; margin: 0 0 10px 0;">📍</parrafo>
+      <t3 estilo="margin: 10px 0; color: #2c3e50;">Ubicación</t3>
+      <parrafo estilo="color: #34495e; margin: 0;">CDMX, México</parrafo>
+    </div>
+  </div>
+
+  <div estilo="background-color: #667eea; color: white; padding: 30px; border-radius: 8px; text-align: center;">
+    <t2 estilo="margin-top: 0; color: white;">Sígueme en Redes</t2>
+    <div estilo="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+      <enlace href="#" texto="🐦 Twitter" estilo="color: white; text-decoration: none; padding: 10px 15px; background-color: rgba(255,255,255,0.1); border-radius: 4px;">
+      <enlace href="#" texto="🐙 GitHub" estilo="color: white; text-decoration: none; padding: 10px 15px; background-color: rgba(255,255,255,0.1); border-radius: 4px;">
+      <enlace href="#" texto="💼 LinkedIn" estilo="color: white; text-decoration: none; padding: 10px 15px; background-color: rgba(255,255,255,0.1); border-radius: 4px;">
+      <enlace href="#" texto="🎨 Dribbble" estilo="color: white; text-decoration: none; padding: 10px 15px; background-color: rgba(255,255,255,0.1); border-radius: 4px;">
+    </div>
+  </div>
+</contenedor>
+
+<pie-pagina></pie-pagina>
+
+[funcion enviarMensaje()]
+variable nombreUsuario = document.getElementById("nombre").value
+variable emailUsuario = document.getElementById("email").value
+variable asuntoMsg = document.getElementById("asunto").value
+variable mensajeContenido = document.getElementById("mensaje").value
+
+[si nombreUsuario && emailUsuario && asuntoMsg && mensajeContenido]
+#mensaje-respuesta.texto = "✅ ¡Mensaje enviado correctamente! Te responderé pronto."
+#mensaje-respuesta.estilo = "color: #27ae60; padding: 15px; background-color: #d5f4e6; border-radius: 4px;"
+mostrar "Mensaje enviado por: " + emailUsuario
+[/si]
+
+[sino]
+#mensaje-respuesta.texto = "❌ Por favor completa todos los campos requeridos."
+#mensaje-respuesta.estilo = "color: #e74c3c; padding: 15px; background-color: #fadbd8; border-radius: 4px;"
+[/sino]
+[/funcion]

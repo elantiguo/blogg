@@ -1,0 +1,23 @@
+[componente tarjeta-articulo]
+<article estilo="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
+  <div estilo="display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px;">
+    <div estilo="flex: 1;">
+      <t2 estilo="margin: 0 0 10px 0; color: #2c3e50;">Título del Artículo</t2>
+      <parrafo estilo="color: #7f8c8d; font-size: 14px; margin: 5px 0;">
+        <etiqueta estilo="background-color: #e8f4f8; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-right: 10px;">Categoría</etiqueta>
+        <etiqueta estilo="color: #95a5a6; font-style: italic;">15 de Noviembre, 2025</etiqueta>
+      </parrafo>
+    </div>
+    <div estilo="background-color: #3498db; color: white; padding: 8px 12px; border-radius: 4px; font-size: 12px; font-weight: bold;">Nuevo</div>
+  </div>
+  
+  <parrafo estilo="color: #34495e; line-height: 1.6; margin: 15px 0;">
+    Este es un resumen breve del artículo. Aquí va un extracto interesante del contenido principal para que los lectores sepan de qué trata...
+  </parrafo>
+  
+  <div estilo="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #ecf0f1;">
+    <parrafo estilo="color: #95a5a6; font-size: 14px; margin: 0;">Por: Juan Pérez | Lectura: 5 min</parrafo>
+    <enlace href="#articulo-detalle" texto="Leer más →" estilo="color: #3498db; text-decoration: none; font-weight: bold;">
+  </div>
+</article>
+[/componente]

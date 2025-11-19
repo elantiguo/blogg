@@ -1,0 +1,116 @@
+<navegacion></navegacion>
+
+<div clase="contenedor-articulos">
+  <t1>Todos los Artículos</t1>
+
+  <div clase="malla-articulos">
+    <div>
+      <articulo cuando_clic="irArticulo(1)">
+        <div clase="encabezado-articulo">
+          <div>
+            <t2 clase="titulo-articulo">Introducción a SIUM Framework</t2>
+            <p clase="fecha-articulo">📅 18 de Noviembre, 2025</p>
+          </div>
+          <span clase="etiqueta-categoria">Frameworks</span>
+        </div>
+        <p clase="contenido-articulo">
+          Descubre cómo SIUM simplifica el desarrollo web con su sintaxis única y componentes reutilizables. Un framework minimalista pero potente para crear aplicaciones web modernas sin necesidad de configuraciones complejas.
+        </p>
+        <p clase="metadatos-articulo">⏱️ Lectura: 8 min | 👤 Por: Juan Pérez</p>
+      </articulo>
+
+      <articulo cuando_clic="irArticulo(2)">
+        <div clase="encabezado-articulo">
+          <div>
+            <t2 clase="titulo-articulo">Mejores Prácticas en JavaScript</t2>
+            <p clase="fecha-articulo">📅 15 de Noviembre, 2025</p>
+          </div>
+          <span clase="etiqueta-categoria javascript">JavaScript</span>
+        </div>
+        <p clase="contenido-articulo">
+          Aprende las mejores prácticas para escribir código JavaScript limpio, mantenible y eficiente. Desde convenciones de nombres hasta patrones de diseño avanzados que harán tu código más profesional.
+        </p>
+        <p clase="metadatos-articulo">⏱️ Lectura: 12 min | 👤 Por: Juan Pérez</p>
+      </articulo>
+
+      <articulo cuando_clic="irArticulo(3)">
+        <div clase="encabezado-articulo">
+          <div>
+            <t2 clase="titulo-articulo">Diseño Responsivo con CSS Grid</t2>
+            <p clase="fecha-articulo">📅 12 de Noviembre, 2025</p>
+          </div>
+          <span clase="etiqueta-categoria css">CSS</span>
+        </div>
+        <p clase="contenido-articulo">
+          Domina CSS Grid y crea layouts responsivos sin complicaciones. Veremos ejemplos prácticos y casos de uso reales para mejorar tu maquetación web en cualquier dispositivo.
+        </p>
+        <p clase="metadatos-articulo">⏱️ Lectura: 10 min | 👤 Por: Juan Pérez</p>
+      </articulo>
+
+      <articulo cuando_clic="irArticulo(4)">
+        <div clase="encabezado-articulo">
+          <div>
+            <t2 clase="titulo-articulo">Automatización con Node.js</t2>
+            <p clase="fecha-articulo">📅 10 de Noviembre, 2025</p>
+          </div>
+          <span clase="etiqueta-categoria nodejs">Node.js</span>
+        </div>
+        <p clase="contenido-articulo">
+          Crea scripts de automatización potentes con Node.js. Aprende a automatizar tareas repetitivas, procesar archivos y crear herramientas CLI personalizadas para tu flujo de trabajo.
+        </p>
+        <p clase="metadatos-articulo">⏱️ Lectura: 15 min | 👤 Por: Juan Pérez</p>
+      </articulo>
+    </div>
+
+    <barra-lateral>
+      <t3>📚 Categorías</t3>
+      <ul>
+        <li>
+          <a href="#" clase="enlace-categoria">📌 Frameworks (5)</a>
+        </li>
+        <li>
+          <a href="#" clase="enlace-categoria">📌 JavaScript (8)</a>
+        </li>
+        <li>
+          <a href="#" clase="enlace-categoria">📌 CSS (6)</a>
+        </li>
+        <li>
+          <a href="#" clase="enlace-categoria">📌 Node.js (4)</a>
+        </li>
+        <li>
+          <a href="#" clase="enlace-categoria">📌 Desarrollo Web (12)</a>
+        </li>
+      </ul>
+
+      <t3>🔥 Populares</t3>
+      <ul>
+        <li clase="elemento-popular">
+          <a href="#" clase="enlace-popular">Guía Completa CSS Grid</a>
+          <p clase="vistas-popular">👁️ 1,234 vistas</p>
+        </li>
+        <li clase="elemento-popular">
+          <a href="#" clase="enlace-popular">Async/Await Explicado</a>
+          <p clase="vistas-popular">👁️ 892 vistas</p>
+        </li>
+        <li clase="elemento-popular">
+          <a href="#" clase="enlace-popular">API REST con Express</a>
+          <p clase="vistas-popular">👁️ 756 vistas</p>
+        </li>
+      </ul>
+
+      <div clase="boletin">
+        <t4>📬 Boletín</t4>
+        <p>Recibe mis últimos artículos en tu correo</p>
+        <input tipo="email" marcador="tu@email.com">
+        <button>Suscribirse</button>
+      </div>
+    </barra-lateral>
+  </div>
+</div>
+
+<pie-pagina></pie-pagina>
+
+[funcion irArticulo()]
+mostrar "Navegando al artículo..."
+redirigir("#paginas/articulo-detalle")
+[/funcion]

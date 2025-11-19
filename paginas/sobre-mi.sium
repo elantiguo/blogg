@@ -1,0 +1,95 @@
+<navegacion></navegacion>
+
+<contenedor estilo="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+  <div estilo="display: grid; grid-template-columns: 300px 1fr; gap: 40px; margin-bottom: 40px;">
+    <div estilo="text-align: center;">
+      <div estilo="width: 200px; height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 80px;">
+        👨‍💻
+      </div>
+      <t2 estilo="color: #2c3e50; margin-bottom: 5px;">Alexis Guerrero</t2>
+      <parrafo estilo="color: #667eea; font-weight: bold; margin-bottom: 20px;">Desarrollador Web Full Stack</parrafo>
+      
+      <div estilo="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+        <t4 estilo="margin-top: 0; color: #2c3e50;">Ubicación</t4>
+        <parrafo estilo="margin: 0; color: #34495e;">📍 Ciudad de México, México</parrafo>
+      </div>
+
+      <div estilo="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
+        <enlace href="#" texto="Twitter" estilo="background-color: #3498db; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; font-weight: bold;">
+        <enlace href="#" texto="GitHub" estilo="background-color: #34495e; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; font-weight: bold;">
+        <enlace href="#" texto="LinkedIn" estilo="background-color: #0077b5; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; font-weight: bold;">
+      </div>
+
+      <boton cuando_clic="descargarCV()" estilo="width: 100%; background-color: #667eea; color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 16px;">
+        📥 Descargar CV
+      </boton>
+    </div>
+
+    <div>
+      <t2 estilo="color: #2c3e50; margin-top: 0;">¡Hola! 👋</t2>
+      <parrafo estilo="color: #34495e; line-height: 1.8; font-size: 16px;">
+        Soy un desarrollador web apasionado con más de 5 años de experiencia en desarrollo full stack. Me especializó en crear aplicaciones web modernas, escalables y orientadas al usuario. Tengo una gran pasión por aprender nuevas tecnologías y compartir mi conocimiento con la comunidad.
+      </parrafo>
+
+      <t3 estilo="color: #2c3e50; margin-top: 30px;">Habilidades Técnicas</t3>
+      
+      <div estilo="margin-bottom: 20px;">
+        <parrafo estilo="margin: 0 0 8px 0; font-weight: bold; color: #2c3e50;">Frontend</parrafo>
+        <div estilo="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span estilo="background-color: #e74c3c; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">HTML5</span>
+          <span estilo="background-color: #e74c3c; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">CSS3</span>
+          <span estilo="background-color: #f39c12; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">JavaScript</span>
+          <span estilo="background-color: #3498db; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">React</span>
+          <span estilo="background-color: #3498db; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">Vue.js</span>
+        </div>
+      </div>
+
+      <div estilo="margin-bottom: 20px;">
+        <parrafo estilo="margin: 0 0 8px 0; font-weight: bold; color: #2c3e50;">Backend</parrafo>
+        <div estilo="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span estilo="background-color: #27ae60; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">Node.js</span>
+          <span estilo="background-color: #27ae60; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">Express</span>
+          <span estilo="background-color: #3498db; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">Python</span>
+          <span estilo="background-color: #333; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">PostgreSQL</span>
+          <span estilo="background-color: #13aa52; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">MongoDB</span>
+        </div>
+      </div>
+
+      <div estilo="margin-bottom: 20px;">
+        <parrafo estilo="margin: 0 0 8px 0; font-weight: bold; color: #2c3e50;">Herramientas</parrafo>
+        <div estilo="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span estilo="background-color: #f0db4f; color: #333; padding: 8px 12px; border-radius: 4px; font-size: 14px;">Git</span>
+          <span estilo="background-color: #ff6c37; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">Docker</span>
+          <span estilo="background-color: #764abc; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">Jest</span>
+          <span estilo="background-color: #0db7ed; color: white; padding: 8px 12px; border-radius: 4px; font-size: 14px;">AWS</span>
+        </div>
+      </div>
+
+      <t3 estilo="color: #2c3e50;">Experiencia</t3>
+      
+      <div estilo="border-left: 4px solid #667eea; padding-left: 20px; margin-bottom: 25px;">
+        <t4 estilo="margin: 0 0 5px 0; color: #2c3e50;">Senior Frontend Developer</t4>
+        <parrafo estilo="color: #7f8c8d; font-size: 14px; margin: 0 0 10px 0;">Tech Solutions Inc. | 2021 - Presente</parrafo>
+        <parrafo estilo="color: #34495e; margin: 0;">Liderando el desarrollo de aplicaciones frontend escalables con React y Vue.js. Implementando arquitecturas modernas y mejorando la experiencia del usuario.</parrafo>
+      </div>
+
+      <div estilo="border-left: 4px solid #667eea; padding-left: 20px; margin-bottom: 25px;">
+        <t4 estilo="margin: 0 0 5px 0; color: #2c3e50;">Full Stack Developer</t4>
+        <parrafo estilo="color: #7f8c8d; font-size: 14px; margin: 0 0 10px 0;">Digital Innovations Co. | 2019 - 2021</parrafo>
+        <parrafo estilo="color: #34495e; margin: 0;">Desarrollo de aplicaciones web completas con Node.js, Express y bases de datos relacionales. Participación en metodologías ágiles y sprint planning.</parrafo>
+      </div>
+
+      <div estilo="border-left: 4px solid #667eea; padding-left: 20px;">
+        <t4 estilo="margin: 0 0 5px 0; color: #2c3e50;">Junior Developer</t4>
+        <parrafo estilo="color: #7f8c8d; font-size: 14px; margin: 0 0 10px 0;">WebDev Studio | 2018 - 2019</parrafo>
+        <parrafo estilo="color: #34495e; margin: 0;">Inicio en el desarrollo web, creación de sitios responsivos y mantenimiento de aplicaciones legacy.</parrafo>
+      </div>
+    </div>
+  </div>
+</contenedor>
+
+<pie-pagina></pie-pagina>
+
+[funcion descargarCV()]
+mostrar "Preparando descarga del CV..."
+[/funcion]

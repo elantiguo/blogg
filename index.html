@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi Blog Personal - Artículos sobre desarrollo web, JavaScript, CSS y más">
+  <meta name="author" content="Juan Pérez">
+  <meta name="theme-color" content="#667eea">
+  
+  <title>Mi Blog Personal | Juan Pérez</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #34495e;
+      line-height: 1.6;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Scrollbar personalizada */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #667eea;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5568d3;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #app {
+      animation: fadeIn 0.3s ease-in;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Estilos para enlaces */
+    a {
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    /* Estilos para botones */
+    boton, button {
+      transition: all 0.3s;
+    }
+
+    boton:hover, button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Estilos para inputs */
+    entrada, input, textarea {
+      transition: border-color 0.3s;
+    }
+
+    entrada:focus, input:focus, textarea:focus {
+      outline: none;
+      border-color: #667eea !important;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    /* Estilos para artículos */
+    article {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    article:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para contenedor principal */
+    contenedor {
+      display: block;
+    }
+
+    /* Títulos */
+    t1, h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+
+    t2, h2 {
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    t3, h3 {
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+
+    t4, h4 {
+      font-size: 1.25em;
+      font-weight: 700;
+    }
+
+    /* Párrafos */
+    parrafo, p {
+      margin: 10px 0;
+    }
+
+    /* Listas */
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    ul li, ol li {
+      margin-bottom: 8px;
+    }
+
+    /* Enlace por defecto */
+    enlace {
+      display: inline-block;
+      text-decoration: none;
+      color: #667eea;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    enlace:hover {
+      color: #5568d3;
+      text-decoration: underline;
+    }
+
+    /* Entrada por defecto */
+    entrada, input, textarea {
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    /* Boton por defecto */
+    boton, button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #667eea;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: inherit;
+    }
+
+    /* Etiqueta */
+    etiqueta, label {
+      display: inline-block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      t1, h1 {
+        font-size: 1.8em;
+      }
+
+      t2, h2 {
+        font-size: 1.4em;
+      }
+
+      t3, h3 {
+        font-size: 1.2em;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      [estilo*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- El contenido se cargará aquí dinámicamente -->
+  </div>
+
+  <!-- Script del runtime SIUM -->
+  <script src="../sium-runtime.js"></script>
+  
+  <!-- Utilidades del blog -->
+  <script src="./utilidades/helpers.js"></script>
+
+  <script>
+    // Inicializar el runtime SIUM cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', function() {
+      // Crear instancia del runtime
+      const app = new TiempoEjecucionSium('app');
+      
+      // Log para debugging
+      console.log('🚀 Blog SIUM iniciado');
+      console.log('Páginas disponibles: inicio, articulos, articulo-detalle, sobre-mi, contacto');
+    });
+  </script>
+</body>
+</html>

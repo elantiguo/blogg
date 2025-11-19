@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "**/*.sium",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}
