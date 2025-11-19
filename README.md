@@ -238,7 +238,7 @@ scrollSuave(elementoId); // Scroll suave a elemento
 
 ## 👨‍💻 Autor
 
-Juan Pérez - Desarrollador Web Full Stack
+Alexis Guerrero - Desarrollador Web Full Stack
 
 ## 📝 Licencia
 
